@@ -23,16 +23,7 @@ Os perigos podem ser:
 
 ## 🌐 Como visualizar
 
-Você pode abrir o `index.html` diretamente no navegador. O JavaScript irá buscar os dados automaticamente do JSON:
-
-📄 [`perigos.json`](https://raw.githubusercontent.com/nicholemos/perigos/main/perigos.json)
-
-> Para rodar localmente, certifique-se de estar usando um servidor local (como Live Server do VSCode), pois o `fetch` pode ser bloqueado por CORS ao abrir o arquivo diretamente.
-
-## 📁 Estrutura do Projeto
-
-perigos/ ├── index.html ├── style.css ├── script.js ├── perigos.json └── imagens/ └── Avalanche.png
-
+Você pode abrir o `index.html` diretamente no navegador. 
 
 ## 🚧 Em desenvolvimento
 
