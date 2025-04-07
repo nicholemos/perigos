@@ -1,81 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perigos Complexos em Tormenta 20</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Perigos Complexos - STR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+<body class="container py-4">
+  <h1 class="mb-3">Perigos Complexos</h1>
+  <p>
+    Perigos complexos são cenas desafiadoras que envolvem múltiplos testes, como fugir de uma avalanche ou enfrentar uma tempestade. 
+    Eles funcionam como combates, mas sem inimigos, usando testes estendidos para resolver a situação.
+  </p>
 
-<body class="bg-light">
-  <div class="container py-4">
-    <h1 class="mb-4">Perigos Complexos em Tormenta 20</h1>
-
-    <section class="mb-5">
-      <h2>O que são Perigos Complexos?</h2>
-      <p>Uma avalanche nas Montanhas Uivantes, uma jornada pelos ermos e uma tempestade em alto mar são exemplos de perigos complexos. Enquanto perigos simples oferecem uma ameça dentro de uma cena, perigos complexos são uma cena por si só. Eles são uma boa opção para quando você quer uma cena de ação que não seja um combate.</p>
-      <p>Em termos de jogo, perigos complexos são similares a combates, envolvendo diversas decisões e múltiplos testes. A mecânica deles é baseada em testes estendidos (veja a página 222), mas cada um pode trazer regras próprias. A ficha de cada perigo complexo traz as seguintes informações.</p>
-      <ul>
-        <li><strong>Nome e ND:</strong> Nome do perigo e nível de desafio.</li>
-        <li><strong>Objetivo:</strong> O que os personagens devem fazer para "vencer" o perigo.</li>
-        <li><strong>Efeito:</strong> O que o perigo causa aos personagens.</li>
-        <li><strong>Ações:</strong> Ações que os personagens podem realizar durante o perigo.</li>
-      </ul>
-    </section>
-
-    <section class="mb-4">
-      <div class="row g-3">
-        <div class="col-md-4">
-          <label for="origem" class="form-label">Origem</label>
-          <select id="origem" class="form-select filtro">
-            <option value="">Todas</option>
-            <option value="Tormenta 20 JdA">Tormenta 20 JdA</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <label for="nd" class="form-label">ND</label>
-          <select id="nd" class="form-select filtro">
-            <option value="">Todos</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <label for="tipo" class="form-label">Tipo</label>
-          <select id="tipo" class="form-select filtro">
-            <option value="">Todos</option>
-            <option value="físico">Físico</option>
-            <option value="mental">Mental</option>
-            <option value="social">Social</option>
-          </select>
-        </div>
-      </div>
-    </section>
-
-    <section id="lista-perigos">
-      <div class="card mb-4 perigo" data-origem="Tormenta 20 JdA" data-nd="4" data-tipo="físico">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="Avalanche.png" class="img-fluid rounded-start" alt="Avalanche">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Avalanche (ND 4)</h5>
-              <p><strong>Origem:</strong> Tormenta 20 JdA</p>
-              <p><strong>Tipo:</strong> Físico</p>
-              <p><strong>Objetivo:</strong> Escapar da avalanche.</p>
-              <p><strong>Efeito:</strong> O grupo tem cinco rodadas para se afastar dos escombros... (texto completo conforme imagem).</p>
-              <p><strong>Testes:</strong> Atletismo CD 20 para correr, Atletismo CD 25 para carregar outro, Percepção CD 20 para procurar caminho.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <label for="origem" class="form-label">Origem</label>
+      <select class="form-select filtro" id="origem">
+        <option value="">Todas</option>
+        <option value="Tormenta 20 JdA">Tormenta 20 JdA</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="nd" class="form-label">ND</label>
+      <select class="form-select filtro" id="nd">
+        <option value="">Todos</option>
+        <option value="4">ND 4</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="tipo" class="form-label">Tipo</label>
+      <select class="form-select filtro" id="tipo">
+        <option value="">Todos</option>
+        <option value="físico">Físico</option>
+        <option value="mental">Mental</option>
+        <option value="social">Social</option>
+      </select>
+    </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div id="lista-perigos"></div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
