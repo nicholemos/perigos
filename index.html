@@ -1,45 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Perigos Complexos - STR</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perigos Complexos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="container py-4">
-  <h1 class="mb-3">Perigos Complexos</h1>
-  <p>
-    Perigos complexos são cenas desafiadoras que envolvem múltiplos testes, como fugir de uma avalanche ou enfrentar uma tempestade. 
-    Eles funcionam como combates, mas sem inimigos, usando testes estendidos para resolver a situação.
-  </p>
+<body class="bg-dark text-light">
 
-  <div class="row mb-4">
-    <div class="col-md-4">
-      <label for="origem" class="form-label">Origem</label>
-      <select class="form-select filtro" id="origem">
-        <option value="">Todas</option>
-        <option value="Tormenta 20 JdA">Tormenta 20 JdA</option>
-      </select>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Perigos Complexos</h1>
+
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <label for="origem" class="form-label">Origem</label>
+        <select id="origem" class="form-select"></select>
+      </div>
+      <div class="col-md-4">
+        <label for="nd" class="form-label">ND</label>
+        <select id="nd" class="form-select"></select>
+      </div>
+      <div class="col-md-4">
+        <label for="tipo" class="form-label">Tipo</label>
+        <select id="tipo" class="form-select"></select>
+      </div>
     </div>
-    <div class="col-md-4">
-      <label for="nd" class="form-label">ND</label>
-      <select class="form-select filtro" id="nd">
-        <option value="">Todos</option>
-        <option value="4">ND 4</option>
-      </select>
-    </div>
-    <div class="col-md-4">
-      <label for="tipo" class="form-label">Tipo</label>
-      <select class="form-select filtro" id="tipo">
-        <option value="">Todos</option>
-        <option value="físico">Físico</option>
-        <option value="mental">Mental</option>
-        <option value="social">Social</option>
-      </select>
-    </div>
+
+    <div id="perigos-container" class="row gy-4"></div>
   </div>
-
-  <div id="lista-perigos"></div>
 
   <script src="script.js"></script>
 </body>
